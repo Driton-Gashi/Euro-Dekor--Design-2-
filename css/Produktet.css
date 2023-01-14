@@ -1,0 +1,124 @@
+body {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/banner_portfolio.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 60%;
+  background-position: top center;
+  position: relative;
+}
+.first_page {
+  height: 40vh;
+  position: relative;
+}
+.first_page h1 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.second_page .container .foto {
+  width: 100%;
+  height: 100%;
+  /* background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important; */
+}
+.foto_wrapper {
+  width: 30%;
+  height: 250px;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+.second_page .container {
+  text-align: center;
+}
+.second_page {
+  background: #fff;
+}
+.navigation ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation ul {
+  margin: 0;
+}
+.navigation ul li {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s ease color;
+  font-size: 20px;
+  cursor: pointer;
+}
+.navigation ul li:hover {
+  color: #819c29;
+}
+.foto_wrapper .text h3 a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+}
+.full_image {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  z-index: 4;
+}
+.full_image .image {
+  width: 80%;
+  height: 80%;
+  background-size: cover !important;
+  background-position: center !important;
+  cursor: pointer;
+}
+.full_image.aktive {
+  display: block;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xFullImg {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.navigation ul li.aktive {
+  color: #819c29;
+}
+@media (max-width: 991px) {
+  .foto_wrapper {
+    width: 40%;
+  }
+  .full_image .image {
+    object-fit: scale-down;
+  }
+}
+@media (max-width: 767px) {
+  .foto_wrapper {
+    width: 100%;
+  }
+  .navigation ul li {
+    font-size: 17px;
+  }
+}
+@media (max-width: 575px) {
+  .foto_wrapper {
+    margin: 15px 0 15px 0;
+  }
+}

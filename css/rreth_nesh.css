@@ -1,0 +1,49 @@
+body {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/banner_portfolio.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 60%;
+  background-position: top center;
+  position: relative;
+}
+.first_page {
+  height: 40vh;
+  position: relative;
+}
+.first_page h1 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.second_page {
+  background: #fff;
+  padding: 60px;
+}
+.second_page img {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  object-fit: cover;
+}
+.second_page p {
+  line-height: 1.8;
+  opacity: 0.8;
+  text-align: justify;
+}
+.second_page h3 {
+  margin-bottom: 20px;
+}
+@media (max-width: 780px) {
+  body {
+    background-size: cover;
+  }
+}
+@media (max-width: 460px) {
+  .second_page {
+    padding: 30px;
+  }
+}

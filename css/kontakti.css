@@ -1,0 +1,82 @@
+body {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../img/Contact\ us\ Banner.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 70%;
+  background-position: top center;
+  position: relative;
+}
+.first_page {
+  height: 40vh;
+  position: relative;
+}
+.first_page h1 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.second_page {
+  background: #fff;
+  padding: 60px;
+}
+.second_page form {
+  width: 50%;
+  margin: auto;
+}
+.second_page form input {
+  padding: 7px;
+  border: 2px solid #819c29;
+  outline: none;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+#name {
+  width: calc(50% - 3px);
+}
+#email {
+  width: calc(50% - 3px);
+}
+#text-area {
+  width: 99.8%;
+  padding: 7px;
+  border: 2px solid #819c29;
+  outline: none;
+  border-radius: 5px;
+}
+#btn {
+  margin: 5px 0;
+  padding: 10px 50px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #819c29;
+  transition: 0.4s ease all;
+  font-weight: bold;
+}
+#btn:hover {
+  background: #fff;
+  color: #819c29;
+  border-color: #819c29;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .second_page form {
+    width: 75%;
+  }
+}
+@media (max-width: 468px) {
+  .second_page {
+    padding: 20px 5px;
+  }
+  .second_page form {
+    width: 100%;
+  }
+  #name,
+  #email {
+    width: 100%;
+  }
+}
